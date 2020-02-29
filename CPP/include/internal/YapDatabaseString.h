@@ -28,7 +28,8 @@
  *
  * The number below represents the largest amount of memory (in bytes) that will be allocated on the stack per string.
  */
-#define YapDatabaseStringMaxStackLength (1024 * 4)
+
+constexpr int YAP_DATABASE_STRING_MAX_STACK_LENGTH = (1024 * 4);
 
 /**
  * Struct designed to be allocated on the stack.
