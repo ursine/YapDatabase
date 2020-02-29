@@ -9,8 +9,6 @@
 
 #import "YDBLogMessage.h"
 
-NS_ASSUME_NONNULL_BEGIN
-
 #if defined(SQLITE_HAS_CODEC) && defined(YAP_STANDARD_SQLITE)
 
 	#error It seems you're using CocoaPods and you included YapDatabase and YapDatabase/Cipher pods. You just need to use "pod YapDatabase/SQLCipher"
@@ -969,4 +967,4 @@ extern NSString *const YapDatabaseModifiedExternallyKey;
 
 @end
 
-NS_ASSUME_NONNULL_END
+

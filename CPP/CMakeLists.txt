@@ -1,7 +1,7 @@
-cmake_minimum_required(VERSION 3.13)
+cmake_minimum_required(VERSION 3.10)
 project(yapdatabasecpp VERSION 1.0.0 LANGUAGES CXX DESCRIPTION "YapDatabase CPP Library")
 
-add_library(yappdatabasecpp SHARED)
+add_library(yappdatabasecpp SHARED src/sqlite3.c)
 
 set_target_properties(yappdatabasecpp PROPERTIES VERSION ${PROJECT_VERSION})
 set_target_properties(yappdatabasecpp PROPERTIES SOVERSION 1)
